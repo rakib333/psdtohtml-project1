@@ -25,11 +25,12 @@ ol {
 }
 
 .container {
-    width: 100%;
+    max-width: 100%;
 }
 
 .header-bg {
     background-color: #292929;
+    display: block;
 }
 
 .header-main {
@@ -177,9 +178,11 @@ ol {
     color: #888888;
 }
 
-.footer-container {
-    width: 100%;
+footer {
     background-color: #F8F8F8;
+}
+
+.footer-container {
     text-align: center;
     padding: 75px 0px;
 }
@@ -209,5 +212,46 @@ ol {
 
 .social-icon i:hover {
     background-color: #516FAD;
+
+}
+
+@media only screen and (max-width:688px) {
+
+    .header-main {
+        display: flex;
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .menu a {
+        border: none;
+    }
+
+    .menu .left-border {
+        border-left: none;
+    }
+
+    .container-main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .aside-item .item1 .search-input {
+        width: 90%;
+    }
+
+    .input-field .position {
+        position: relative;
+    }
+
+    .input-field button .img-middle {
+        position: absolute;
+        left: -130px;
+    }
+
+    footer {
+        width: 100%;
+    }
 
 }
